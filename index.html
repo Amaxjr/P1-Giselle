@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header>
-        <img src="" alt="logo">
-        <div class="navbar">
+        <img src="" alt="logo" id="logoHeader">
+        <nav class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-            </ul>
-        </div>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="sobre.html">Serviços</a></li>
+                <li><a href="contato.html">Agendamento</a></li>
+                <li><a href="servicos.html">Contato</a></li>
+             </ul>
+        </nav>
     </header>
     <section>
         <div class="Gis">
@@ -38,5 +39,25 @@
             </p>
         </div>
     </section>
+    <div class="carrossel">
+        <!-- Slides -->
+        <div class="slide active">
+            <img src="imagem1.jpg" alt="Imagem 1">
+            <div class="slide-texto">Legenda da Imagem 1</div>
+        </div>
+        <div class="slide">
+            <img src="imagem2.jpg" alt="Imagem 2">
+            <div class="slide-texto">Legenda da Imagem 2</div>
+        </div>
+        <div class="slide">
+            <img src="imagem3.jpg" alt="Imagem 3">
+            <div class="slide-texto">Legenda da Imagem 3</div>
+        </div>
+
+        <!-- Botões de navegação -->
+        <button class="btn-anterior" onclick="mudarSlide(-1)">❮</button>
+        <button class="btn-proximo" onclick="mudarSlide(2)">❯</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
