@@ -1,62 +1,82 @@
-.carrossel {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+body {
+    background-color: hsl(350, 100%, 98%);
+    font-family: 'times new roman', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
 }
-
-.slide {
-    display: none;
-    width: 100%;
-}
-
-.slide.active {
-    display: block;
-    animation: fade 1.5s;
-}
-
-@keyframes fade {
-    from { opacity: 0.4; }
-    to { opacity: 1; }
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-}
-
-.slide-texto {
-    text-align: center;
-    padding: 15px;
-    background-color: #333;
+header {
+    background-color: #f5eddb;
     color: white;
-    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    position:absolute ;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 5rem;
+    z-index: 1000;   
 }
-
-.btn-anterior, .btn-proximo {
+ul.menu{
+    list-style: none;
+    padding-left:  ;
+    margin: 0;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+ul.menu li{
+    margin: 0 3vmax;
+    padding: 0;
+    display: inline-block;
+    right: 2rem;
+}
+#logoHeader {
+    width: 70px;
+    height: 80px;
+    color: white;
+    top: 1rem;
+    margin-left: 200px;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 12px;
-    background-color: rgba(0, 0, 0, 0.5);
+    right: 1px;
+    top: 2rem;
+    gap: 2px;
+    left: 170px;
+}    
+.menu a{
+    text-decoration: none;
     color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    transition: 0.3s;
+    border-radius: 5px;
+    background-color: hsl(34, 54%, 41%);
+    padding: 0.4rem 1rem;
+}
+.Gis{
+    margin-top: 200px;
+    margin-left: 280px;
+    font-size: 30px ;
+}
+.fthead{
+    margin-left: 700px;
+    width: 450px;
+    height: 250px;
+    margin-top: -100px;
+    transition: 0,3s ease;
+}
+.fthead:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+.texto-profile{
+    margin-left: 200px;
+    margin-top: -180px;
+    font-size: 20px ;
+    width:500px;
+    margin-left: 270px;
+    font-family: ;
 }
 
-.btn-anterior:hover, .btn-proximo:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.btn-anterior {
-    left: 10px;
-    border-radius: 0 5px 5px 0;
-}
-
-.btn-proximo {
-    right: 10px;
-    border-radius: 5px 0 0 5px;
-}
