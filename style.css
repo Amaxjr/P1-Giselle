@@ -103,4 +103,10 @@ ul.menu li{
     background-color: #4b1701;
     border: none;
     height: 30px;
+    transition: 0.3s ease;
 }
+#butaosobre:hover{
+    background-color: #793d21;
+    color: white;
+}
+#butao ::after
