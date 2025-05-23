@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+  <div class="slides">
+    <div class="slide" id="slide-1">
+      <h3>Desafios Profissionais</h3>
+      <p>Texto completo aqui...</p>
+    </div>
+    <div class="slide" id="slide-2">
+      <h3>Lidando com a Ansiedade</h3>
+      <p>Texto completo aqui...</p>
+    </div>
+    <!-- Demais slides -->
+  </div>
+  <div class="slider-nav">
+    <a href="#slide-1">1</a>
+    <a href="#slide-2">2</a>
+    <!-- Links para demais slides -->
+  </div>
+</div>
+
+<style>
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.slider-nav a {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background: #ddd;
+  border-radius: 50%;
+  text-decoration: none;
+}
+</style>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+.myPhotoSwiper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.myPhotoSwiper img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.slide-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}

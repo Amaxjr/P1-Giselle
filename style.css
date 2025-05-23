@@ -25,12 +25,14 @@ ul.menu{
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
+    width: 1100px;
 }
 ul.menu li{
     margin: 0 3vmax;
     padding: 0;
     display: inline-block;
     right: 2rem;
+
 }
 #logoHeader {
     width: 80px;
@@ -70,12 +72,14 @@ div.convite h1{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 200px;
-    margin-left: 150px;
-    margin-bottom: 50px
+    margin-left: 100px;
+    margin-bottom: 50px;
+    width: 500px;
 }
 div.convite p,ul{
+    width: 500px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
     font-family: montserrat;
     color: #793d21;
     margin-top: 20px;
@@ -103,18 +107,138 @@ div.convite p,ul{
     color: white;
 }
 img.imagem-giselle{
-    width: 400px;
-    height: 500px;
-    margin-top: -400px;
-    margin-left: 900px;
+    width: 500px;
+    height: 650px;
+    margin-top: -600px;
+    margin-left: 800px;
     border-radius: 50%;
     transition: 0.3s ease;
 }
-
-
-
-
-
+article.desafios h5{
+    font-weight: 800;
+    font-family: montserrat;
+    color:linear #4b1701 #793d21;
+    background: linear-gradient(to right, #4b1701, #793d21);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 200px;
+    margin-left: 150px;
+}
+article.desafios p{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: montserrat;
+    color: #793d21;
+    margin-left: 100px;
+    width: px;
+}
+article.desafios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 110px;
+    margin-top: 200px;
+}
+div.desafios-texto1{
+    margin-left: 0px;
+    margin-top: 100px;
+    width:500px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size: ;
+    border: #4b1701 solid 1px;
+    border-radius: 20px;
+    border-left: #4b1701 solid 10px;
+    padding:0px 0px 0px 0px;
+    text-justify: center
+}       
+div.desafios-texto1 h5{
+    margin: 20px 15px 15px 0px;
+    margin-left: 50px;
+}
+div.desafios-texto1 p{
+    margin-left: 50px;
+    margin-top: 0px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size: 15px;
+}
+div.desafios-texto2 p{
+    margin-left: 50px;
+    margin-top: ;
+    width:400px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size: 15px;
+}
+div.desafios-texto2 {
+    margin-left: 600px;
+    margin-top: -205px;
+    width:500px;
+    font-family: montserrat;
+    color: #793d21;
+    justify-content: center;
+    border: #4b1701 solid 1px;
+    border-radius: 20px;
+    border-left: #4b1701 solid 10px;
+}
+div.desafios-texto2 h5{
+    margin: 20px 10px 10px 10px;
+    margin-left: 50px;
+}
+div.desafios-texto3{
+    margin-left: px;
+    margin-top: 100px;
+    width:499px;
+    font-family: montserrat;
+    color: #793d21;
+    border: #4b1701 solid 1px;
+    border-radius: 20px;
+    border-left: #4b1701 solid 10px;
+    margin-right: 10px;
+}
+div.desafios-texto3 p{
+    margin-left: 50px;
+    margin-top: 0px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size: 15px;
+}
+div.desafios-texto3 h5{
+    margin: 20px 10px 10px 10px;
+    margin-left: 50px;
+}
+div.desafios-texto4{
+    margin-left: 600px;
+    margin-top: -200px;
+    width:500px;
+    font-family: montserrat;
+    color: #793d21;
+    border: #4b1701 solid 1px;
+    border-radius: 20px;
+    border-left: #4b1701 solid 10px;
+}
+div.desafios-texto4 p{
+    margin-left: 50px;
+    margin-top: 0px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size: 15px;
+}
+div.desafios-texto4 h5{
+    margin: 20px 10px 10px 10px;
+    margin-left: 50px;
+}
+.desafios-texto4,.desafios-texto3,.desafios-texto2,.desafios-texto1{
+    transition: 0.3s ease;
+    box-shadow: #793d21;
+}
+.desafios-texto4:hover,.desafios-texto3:hover,.desafios-texto2:hover,.desafios-texto1:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
 
 
 
