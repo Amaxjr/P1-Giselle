@@ -34,6 +34,12 @@ ul.menu li{
     right: 2rem;
 
 }
+ul.menu li:hover{
+    background-color: #793d21;
+    color: white;
+    scale: 1.1;
+    transition: 0,3s ease;
+}
 #logoHeader {
     width: 80px;
     height: 90px;
@@ -61,6 +67,9 @@ ul.menu li{
 .menu a:hover{
     background-color: #793d21;
     color: white;
+    scale: 1.1;
+    box-shadow: #793d21 0px 0px 10px 0px;
+    transition: 0.3s ease;
 }
 div.convite h1{
     font-size: 50px;
@@ -75,6 +84,7 @@ div.convite h1{
     margin-left: 100px;
     margin-bottom: 50px;
     width: 500px;
+
 }
 div.convite p,ul{
     width: 500px;
@@ -105,12 +115,15 @@ div.convite p,ul{
 .botao-agendar:hover{
     background-color: #793d21;
     color: white;
+    scale: 1.1;
+    transition: 0.3s ease;
+    box-shadow: #793d21 0px 0px 10px 0px;
 }
 img.imagem-giselle{
     width: 500px;
     height: 650px;
     margin-top: -600px;
-    margin-left: 800px;
+    margin-left: 750px;
     border-radius: 50%;
     transition: 0.3s ease;
 }
@@ -139,7 +152,7 @@ article.desafios{
     justify-content: flex-start;
     flex-direction: row;
     margin-left: 110px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 div.desafios-texto1{
     margin-left: 0px;
@@ -213,7 +226,7 @@ div.desafios-texto3 h5{
 div.desafios-texto4{
     margin-left: 600px;
     margin-top: -200px;
-    width:500px;
+    width:495px;
     font-family: montserrat;
     color: #793d21;
     border: #4b1701 solid 1px;
@@ -237,9 +250,21 @@ div.desafios-texto4 h5{
 }
 .desafios-texto4:hover,.desafios-texto3:hover,.desafios-texto2:hover,.desafios-texto1:hover{
     transform: scale(1.1);
-    transition: 0.3s ease;
+    transition: 0.3s ease;  
+    box-shadow: #4b1701 0px 0px 10px 0px;
 }
-
+.desafios-geral h1{
+    font-size: 35px;
+    font-weight: 800;
+    font-family: montserrat;
+    color:linear #4b1701 #793d21;
+    background: linear-gradient(to right, #4b1701, #793d21);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 100px;
+    margin-left: 0px;
+}
 
 
 
