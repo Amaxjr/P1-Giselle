@@ -4,6 +4,7 @@ body {
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
+    font-size: bold;
 }
 header {
     background-color: #f5eddb;
@@ -265,28 +266,110 @@ div.desafios-texto4 h5{
     margin-top: 100px;
     margin-left: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.carrosel-titulo{
+    font-size: px;
+    font-weight: 800;
+    font-family: montserrat;
+    color:linear #4b1701 #793d21;
+    background: linear-gradient(to right, #4b1701, #793d21);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 200px;
+    margin-left: 0px;
+    text-align: center;
+}
+div.carrosel-texto1{
+    margin-left: 10px;
+    margin-top: 50px;
+    width:400px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size:bold; ;
+    border: #4b1701 solid 1px;
+    border-radius: 20px;
+    border-left: #4b1701 solid 10px;
+    padding:0px 0px 0px 0px;
+    font-size: bold;
+}
+div.carrosel-texto1 h3{
+    margin: 20px 15px 15px 0px;
+    margin-left: 13px;
+    font-size:14px; 
+    color: #4b1701;
+}
+div.carrosel-texto1 p{
+    font-style: ;
+    margin-left: 20px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size: 13px;
+    font-size:bold;
+    
+}
+div.carrosel-texto2{
+    margin-left: 445px;
+    margin-top: -263px;
+    width:400px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size:bold; ;
+    border: #4b1701 solid 1px;
+    border-radius: 20px;
+    border-left: #4b1701 solid 10px;
+}   
+div.carrosel-texto2 h3{
+    margin: 20px 10px 10px 10px;
+    margin-left: 90px;
+    font-size:14px;
+    color: #4b1701;
+}
+div.carrosel-texto2 p{
+    font-style: ;
+    margin-left: 29px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size: 13px;
+    width: 350px;
+}
+div.carrosel-texto3{
+    margin-left: 880px;
+    margin-top: -230px;
+    width:400px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size:bold; ;
+    border: #4b1701 solid 1px;
+    border-radius: 20px;
+    border-left: #4b1701 solid 10px;
+}
+div.carrosel-texto3 h3{
+    margin: 20px 10px 10px 10px;
+    margin-left: 90px;
+    font-size:14px;
+    color: #4b1701;
+}
+div.carrosel-texto3 p{
+    font-style: ;
+    margin-left: 20px;
+    font-family: montserrat;
+    color: #793d21;
+    font-size: 13px;
+}
+div.carrosel-texto1,.carrosel-texto2,.carrosel-texto3{
+    transition: 0.3s ease;
+    box-shadow: #793d21;
+}
+div.carrosel-texto1:hover,.carrosel-texto2:hover,.carrosel-texto3:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;  
+    box-shadow: #4b1701 0px 0px 8px 0px;
+}
 
 .Gis{
     margin-top: 200px;
-    margin-left: 280px;
-    font-size: 30px ;
+    margin-left: 650px;
+    font-size: 28px ;
     font-weight: 800;
     font-family: montserrat;
     color:linear #4b1701 #793d21;
@@ -296,40 +379,336 @@ div.desafios-texto4 h5{
     -webkit-text-fill-color: transparent;
 }
 .fthead{
-    margin-left: 700px;
-    width: 450px;
-    height: 250px;
-    margin-top: -100px;
+    margin-left:80px;
+    width:  450px;
+    height: 550px;
+    margin-top:-100px;
     transition: 0,3s ease;
+    border-radius:  30px 30px 30px 30px;
 }
 .fthead:hover{
     transform: scale(1.1);
     transition: 0.3s ease;
 }
 .texto-profile{
-    margin-left: 200px;
-    margin-top: -180px;
+    margin-left: 650px;
+    margin-top: -480px;
     font-size: 15px ;
     width:500px;
-    margin-left: 270px;
     font-family: montserrat;
     color: #793d21;
+    font-size: bold;
+    margin-bottom: 50px;
 }
-#butaosobre{
-    margin-left: 200px;
-    margin-top: 40px;
+.botao-sobre{
+    margin-top: 500px;
+    margin-left: 650px;
     font-size: 15px ;
     width:220px;
-    margin-left: 270px;
     font-family: montserrat;
     color: #ffffff;
     background-color: #4b1701;
     border: none;
-    height: 30px;
+    transition: 0.3s ease;
+    border-radius: 20px;
+    padding: 15px 20px;
+    text-decoration: none;
+    margin-bottom: 500px;
     transition: 0.3s ease;
 }
-#butaosobre:hover{
+.botao-sobre:hover{
     background-color: #793d21;
     color: white;
+    transform:scale(1.1);
+    transition: 0.3s ease;
+    box-shadow: #793d21 0px 0px 10px 0px;
 }
-#butao ::after
+
+/* Responsividade para telas menores que 800px */
+@media (max-width: 800px) {
+    body {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    header, .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+    ul.menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .botao-agendar,
+    .botao-sobre {
+        margin-left: 0;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .texto-profile,
+    .Gis,
+    .fthead {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    img.imagem-giselle,
+    .fthead {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    article.desafios,
+    .desafios-geral h1 {
+        margin-left: 0 !important;
+        margin-top: 40px;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .desafios-texto1,
+    .desafios-texto2,
+    .desafios-texto3,
+    .desafios-texto4 {
+        width: 95vw !important;
+        margin: 10px 0 !important;
+        min-width: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+    }
+    div.desafios-texto2,
+    div.desafios-texto4 {
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+    }
+    div.desafios-texto3 {
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+    div.convite h1,
+    div.convite p,
+    ul {
+        margin-left: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    img.imagem-giselle,
+    .fthead {
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0 !important;
+        margin-top: 20px !important;
+    }
+    .Gis,
+    .texto-profile {
+        margin-left: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .botao-agendar,
+    .botao-sobre {
+        margin-left: 0 !important;
+        width: 100% !important;
+        font-size: 14px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    div.carrosel-texto1,
+    div.carrosel-texto2,
+    div.carrosel-texto3 {
+        width: 95vw !important;
+        margin: 10px 0 !important;
+        min-width: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+    }
+    ul.carrosel {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+    ul.carrosel li {
+        justify-content: center !important;
+        width: 100% !important;
+    }
+}
+
+/* Responsividade para telas menores que 400px */
+@media (max-width: 400px) {
+    html, body {
+        width: 100vw !important;
+        min-width: 100vw !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+    header {
+        width: 100vw !important;
+        min-width: 100vw !important;
+        max-width: 100vw !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        z-index: 1000 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .menu, ul.menu {
+        width: 100vw !important;
+        min-width: 100vw !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+    body {
+        font-size: 0.95rem !important;
+        padding: 0 2vw !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Zera margens e larguras fixas dos principais blocos */
+    header, .menu, ul.menu, ul.menu li, .desafios-geral h1, .carrosel-titulo, .Gis, .texto-profile, .fthead, .botao-agendar, .botao-sobre, img.imagem-giselle, article.desafios, div.convite h1, div.convite p, ul, .desafios-texto1, .desafios-texto2, .desafios-texto3, .desafios-texto4, div.carrosel-texto1, div.carrosel-texto2, div.carrosel-texto3 {
+        margin: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        width: 98vw !important;
+        max-width: 98vw !important;
+        min-width: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        box-sizing: border-box !important;
+        float: none !important;
+        position: static !important;
+    }
+
+    /* Remove margens negativas e grandes específicas */
+    [class*="desafios-texto"], [class*="carrosel-texto"], .texto-profile, .Gis, .fthead, .botao-sobre, .botao-agendar {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        width: 98vw !important;
+        max-width: 98vw !important;
+        min-width: 0 !important;
+    }
+
+    /* Ajusta paddings e fontes para caber melhor */
+    .botao-agendar, .botao-sobre {
+        font-size: 13px !important;
+        padding: 10px 0 !important;
+        margin-bottom: 10px !important;
+        height: auto !important;
+    }
+
+    .desafios-geral h1, .carrosel-titulo, .Gis, div.convite h1 {
+        font-size: 1.2em !important;
+        margin-top: 16px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Ajusta imagens */
+    img.imagem-giselle, .fthead {
+        width: 98vw !important;
+        height: auto !important;
+        display: block !important;
+        margin: 10px auto !important;
+        border-radius: 20px !important;
+    }
+
+    /* Ajusta flex para coluna */
+    article.desafios, ul.menu, .menu, ul.carrosel {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        width: 100vw !important;
+        display: flex !important;
+    }
+
+    ul.menu li, ul.carrosel li {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center !important;
+        display: block !important;
+    }
+
+    /* Remove margens negativas e grandes dos textos */
+    .desafios-texto1, .desafios-texto2, .desafios-texto3, .desafios-texto4, div.carrosel-texto1, div.carrosel-texto2, div.carrosel-texto3 {
+        margin: 10px 0 !important;
+        padding: 2vw !important;
+        width: 98vw !important;
+        min-width: 0 !important;
+        max-width: 98vw !important;
+    }
+
+    /* Ajusta títulos e parágrafos */
+    h1, h2, h3, h4, h5, p, ul {
+        font-size: 1em !important;
+        margin: 0.5em 0 !important;
+    }
+
+    #logoHeader {
+        display: none !important;
+    }
+    header, .menu, ul.menu {
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    ul.menu {
+        width: 100vw !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;   /* <-- Alinha em linha */
+        gap: 0 !important;
+    }
+    ul.menu li {
+        width: auto !important;
+        display: inline-block !important;
+        margin: 0 2vw !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+}
+@media (max-width: 400px) {
+    html, body {
+        width: 100vw !important;
+        min-width: 100vw !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+    header {
+        width: 100vw !important;
+        min-width: 100vw !important;
+        max-width: 100vw !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        z-index: 1000 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .menu, ul.menu {
+        width: 100vw !important;
+        min-width: 100vw !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+}
