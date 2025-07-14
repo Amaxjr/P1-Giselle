@@ -1,126 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width", initial-scale=1.0">
-  <div class="slides">
-    <div class="slide" id="slide-1">
-      <h3>Desafios Profissionais</h3>
-      <p>Texto completo aqui...</p>
-    </div>
-    <div class="slide" id="slide-2">
-      <h3>Lidando com a Ansiedade</h3>
-      <p>Texto completo aqui...</p>
-    </div>
-    <!-- Demais slides -->
-  </div>
-  <div class="slider-nav">
-    <a href="#slide-1">1</a>
-    <a href="#slide-2">2</a>
-    <!-- Links para demais slides -->
-  </div>
-</div>
-
-<style>
-.slider {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.slides {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
-.slide {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.slider-nav {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-.slider-nav a {
-  margin: 0 5px;
-  padding: 5px 10px;
-  background: #ddd;
-  border-radius: 50%;
-  text-decoration: none;
-}
-</style>
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel Informativo</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    
+    <div class="carrossel">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide ativo">
+                <img src="projeto1.jpg" alt="Projeto 1">
+                <div class="slide-texto">
+                    <h3>Projeto Website Corporativo</h3>
+                    <p>Desenvolvimento completo de website responsivo para empresa de tecnologia, incluindo design UX/UI e integração com CMS.</p>
+                    <a href="#" class="botao">Ver detalhes</a>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="projeto2.jpg" alt="Projeto 2">
+                <div class="slide-texto">
+                    <h3>Aplicativo Mobile</h3>
+                    <p>Criação de aplicativo iOS e Android para gestão de tarefas com sincronização em nuvem e notificações push.</p>
+                    <a href="#" class="botao">Ver detalhes</a>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="projeto3.jpg" alt="Projeto 3">
+                <div class="slide-texto">
+                    <h3>Identidade Visual</h3>
+                    <p>Desenvolvimento de identidade visual completa para marca de moda sustentável, incluindo logo, cores e aplicações.</p>
+                    <a href="#" class="botao">Ver detalhes</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navegação -->
+        <button class="controle prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <button class="controle next" onclick="mudarSlide(1)">&#10095;</button>
+        
+        <!-- Indicadores -->
+        <div class="indicadores">
+            <span class="indicador ativo" onclick="irParaSlide(0)"></span>
+            <span class="indicador" onclick="irParaSlide(1)"></span>
+            <span class="indicador" onclick="irParaSlide(2)"></span>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
 </body>
 </html>
-
-
-
-.myPhotoSwiper {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  border-radius: 15px;
-}
-.myPhotoSwiper img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
-.slide-text {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0,0,0,0.6);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
- <section class="carrosel"> <!--Carrosel-->
-            <div class="carrosel-titulo">
-                <h2>Cuidado Emocional Personalizado: Ferramentas para uma Vida Mais Leve</h2>
-            </div>
-            <div class="carrosel-texto1">
-                <h3> O Que é Terapia Cognitivo-Comportamental (TCC)?</h3>
-                <b><p>A Terapia Cognitivo-Comportamental (TCC) é uma abordagem científica que ajuda você a identificar e modificar padrões de pensamento, emoções e comportamentos que afetam sua qualidade de vida.
-                Como funciona?<br>
-                ✔ Intervenções estruturadas durante as sessões <br>
-                ✔ Atividades práticas para aplicar no seu dia a dia <br>
-                ✔ Psicoeducação – você aprende sobre seu processo emocional e acompanha seus progressos
-                A TCC é focada em resultados, ajudando você a retomar o controle da sua vida, enfrentar desafios com mais confiança e alcançar equilíbrio emocional.</p></b>
-            </div>
-            <div class="carrosel-texto2">
-                <h3>Quando Procurar Terapia?</h3>
-                <p>
-                <B>Você pode se beneficiar da TCC se: <br>
-                🟫Sente-se sobrecarregado(a) pelas emoções <br>
-                🟫Tem dificuldade em lidar com desafios diários <br>
-                🟫Quer entender melhor seus pensamentos e reações <br>
-                🟫Busca ferramentas práticas para uma vida mais leve <br>
-                Não espere chegar ao limite!
-                A terapia é um espaço seguro para autoconhecimento, fortalecimento emocional e desenvolvimento pessoal.</B>
-                </p>
-            </div>
-            <div class="carrosel-texto3">       
-                <h3>Suporte Personalizado e Flexível</h3>
-                <p>
-                    <b>Além das sessões regulares, oferecemos:
-                    <br>
-                    📌 Suporte emergencial – Você pode enviar mensagens quando precisar de orientação rápida (não substitui uma sessão, mas garante acolhimento). <br>
-                    📌 Sessões extras – Caso deseje mais atendimentos, você pode agendar sessões adicionais conforme sua necessidade. <br>
-                    Por que nossa abordagem funciona?
-                    <br>
-                    ✅ Personalizada – Plano terapêutico adaptado às suas demandas <br>
-                    ✅ Ferramentas eficazes – Técnicas para gerenciar emoções e situações difíceis <br>
-                    ✅ Apoio contínuo – Acompanhamento profissional em cada etapa do seu processo br <br>
-                    ✅ Flexibilidade – Escolha entre atendimentos presenciais ou online, conforme sua preferência e conforto</b>
-                </p>
-            </div>        
-    </section>
-    
