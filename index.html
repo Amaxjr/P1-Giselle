@@ -109,22 +109,98 @@
         <a type="button" value="Agende uma consulta" class="botao-sobre" href="https://wa.me/+5571997195245"><b>Fale Comigo</b></a>
     </section>
     <article>
-        <div class="servicos">
-            <h1>Serviços</h1>
-            <div class="servicos-texto1">
-                <h5>Psicoterapia Online</h5>
-                <p>Atendimento psicológico online, com flexibilidade de horários e conforto do seu lar.</p>
+        <div class="carrossel">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide ativo">
+                    <img src="Imgs/Terapia-Online-Obiettivi.png" alt="Projeto 1">
+                <div class="slide-texto">   
+                        <h3>Psicoterapia Online</h3>
+                        <p>Atendimento psicológico online, com flexibilidade de horários e conforto do seu lar.</p>
+                </div>
             </div>
-            <div class="servicos-texto2">
-                <h5>Psicoterapia Presencial</h5>
-                <p>Atendimento psicológico presencial, proporcionando um ambiente acolhedor e seguro.</p>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="Imgs/psicoterapia presencial.svg" alt="Projeto 2">
+                    <div class="slide-texto">
+                        <h3>Psicoterapia Presencial</h3>
+                        <p>Atendimento psicológico presencial, proporcionando um ambiente acolhedor e seguro.</p>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="Imgs/orientação.jpg" alt="Projeto 3">
+                    <div class="slide-texto">
+                    <h2>Avaliação Psicológica</h2>
+                    <p>Realização de avaliações psicológicas para diagnóstico e orientação terapêutica.</p>
+                    </div>
+                </div>
             </div>
-            <div class="servicos-texto3">
-                <h5>Avaliação Psicológica</h5>
-                <p>Realização de avaliações psicológicas para diagnóstico e orientação terapêutica.</p>
-            </div>
+            
+            <!-- Navegação -->
+            <button class="controle prev" onclick="mudarSlide(-1)">&#10094;</button>
+            <button class="controle next" onclick="mudarSlide(1)">&#10095;</button>
+            
+            <!-- Indicadores -->
+            <div class="indicadores">
+                <span class="indicador ativo" onclick="irParaSlide(0)"></span>
+                <span class="indicador" onclick="irParaSlide(1)"></span>
+                <span class="indicador" onclick="irParaSlide(2)"></span>
+            </div>   
         </div>
     </article>
+    <div>
+        <div>
+            <h1>Fale comigo</h1>
+            
+            <p>Entre em contato comigo ou envie uma mensagem via formulário, retornaremos em até 24h.</p>
+            
+            <hr class="divider">
+            
+            <div class="contact-section">
+                <h2>WhatsApp</h2>
+                <p>
+                    <a href="https://wa.me/+5571997195245" target="_blank">(+55 7199719-5245)</a>
+                </p>
+            </div>
+            <div class="contact-section">
+                <h2>Atendimento</h2>
+                <p>Online através de vídeo chamada e presencial em Salvador.</p>
+            </div>
+            <div class="contact-section">
+                <h2>E-mail</h2>
+                <p>
+                    <a href="mailto:psi.larissas@gmail.com">psi.larissas@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-section">
+                <h2>Instagram</h2>
+                <p>
+                    <a href="https://instagram.com/psicologals" target="_blank">@psicologals</a>
+                </p>
+            </div>
+        </div>    
+        <div>
+            <form action="" method="post" class="formulario-contato" id="formulario-contato">
+                <label for="nome">
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </label>
+                <label for="telefone">
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                </label>
+
+                <label for="email">
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </label>
+                <label for="mensagem">
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>  
+                </label>
+                <button type="submit" class="botao-contato">Enviar</button>
+            </form>
+        </div>    
+    </div>
+        
     <script src="script.js"></script>
 </body>
 </html>
